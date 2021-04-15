@@ -8,9 +8,10 @@
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
     . /usr/share/bash-completion/bash_completion
 
-export EDITOR=vim
+export EDITOR=nvim
 export BROWSER=brave
 export PAGER=less
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 export LESSHISTFILE=-
 ### ENV ###
